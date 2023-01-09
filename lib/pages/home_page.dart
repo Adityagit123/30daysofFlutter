@@ -11,14 +11,10 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Catalog App"),
       ),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              child: Text("Welcome to $days days of flutter by $name"),
-            ),
-          ),
-        ],
+      body: Center(
+        child: Container(
+          child: Text("Welcome to $days days of flutter by $name"),
+        ),
       ),
       drawer: Drawer(),
     );
