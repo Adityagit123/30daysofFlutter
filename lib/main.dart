@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
+import 'package:flutter_application_1/sellpage.dart';
 import 'package:flutter_application_1/utils/routes.dart';
+
+import 'finish_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +24,7 @@ class MyApp extends StatelessWidget {
     // final - not changeable
 
 //$ is used for string interpolation
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
@@ -30,9 +33,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        "/": (context) => LoginPage(),
+        "/": (context) => SellPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
-        MyRoutes.loginRoute: (context) => LoginPage(),
       },
     );
   }
